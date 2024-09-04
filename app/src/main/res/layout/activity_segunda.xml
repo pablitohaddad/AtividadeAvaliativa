@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SegundaActivity">
 
-    <EditText
-        android:id="@+id/edtNome"
+    <TextView
+        android:id="@+id/tvNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite o seu nome"/>
-
-    <EditText
-        android:id="@+id/edtIdade"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Nome: "/>
+    <TextView
+        android:id="@+id/tvEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="Digite a sua idade"/>
-
-    <EditText
-        android:id="@+id/edtQtdDinheiro"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Idade: "/>
+    <TextView
+        android:id="@+id/tvPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:hint="Quanto de dinheiro na conta?"/>
-
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Quantidade de Dinheiro na conta: "/>
     <Button
-        android:id="@+id/btnEnviar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar"
+        android:text="Voltar"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"/>
-
 
 </LinearLayout>
