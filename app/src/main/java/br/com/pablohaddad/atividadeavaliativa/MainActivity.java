@@ -1,9 +1,12 @@
 package br.com.pablohaddad.atividadeavaliativa;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +31,20 @@ public class MainActivity extends AppCompatActivity {
         exemplo4 = findViewById(R.id.btnExemplo4);
         exemplo5 = findViewById(R.id.btnExemplo5);
 
-
+        exemplo4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Que bom que estamos aqui!", Toast.LENGTH_SHORT).show();
+                exemplo1.setText("Que bom que deseja ficar :)");
+                exemplo3.getProgress();
+            }
+        });
+        exemplo5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exemplo2.setText("Ah, você quer sair :)");
+            }
+        });
 
     }
 }
